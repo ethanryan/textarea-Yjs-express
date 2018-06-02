@@ -14,6 +14,11 @@ console.log('3. hello from src/yjs...')
 //after some researched, realized the way to run that binary is:
 //run `npx y-websockets-server` in Terminal
 
+//so NOW, to run this app, run:
+//1) `node server.js`, and, in another Terminal tab:
+//2) `npm y-websockets-server`
+//to do ---->>> (try to make it so only need to run one command, so first command also runs second command...)
+
 const Y = require('yjs')
 
 // Yjs plugins
