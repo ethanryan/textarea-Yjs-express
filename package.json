@@ -15,7 +15,11 @@
     "http-server": "^0.11.1",
     "serve-static": "^1.13.2",
     "uniq": "^1.0.1",
-    "y-websockets-client": "^8.0.16"
+    "y-array": "^10.1.4",
+    "y-memory": "^8.0.9",
+    "y-text": "^9.5.1",
+    "y-websockets-client": "^8.0.16",
+    "yjs": "^12.3.3"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
