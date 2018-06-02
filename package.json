@@ -1,0 +1,23 @@
+{
+  "name": "textarea-yjs-express",
+  "version": "1.0.0",
+  "description": "Express app for textarea with Yjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js",
+    "compile": "browserify public/script.js public/main.js -o public/bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^16.2.2",
+    "express": "^4.16.3",
+    "http-server": "^0.11.1",
+    "serve-static": "^1.13.2",
+    "uniq": "^1.0.1",
+    "y-websockets-client": "^8.0.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
