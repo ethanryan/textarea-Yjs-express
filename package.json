@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "server.js",
-    "compile": "browserify public/script.js public/main.js -o public/bundle.js"
+    "compile": "browserify public/script.js public/main.js src/yjs.js -o public/bundle.js"
   },
   "author": "",
   "license": "MIT",
