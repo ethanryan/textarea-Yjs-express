@@ -1,23 +1,26 @@
 console.log('3. hello from src/yjs...')
 
-//note:
+//notes:
 //1) in package.json, compiling each .js file in public/folder and src/yjs by running `npm run compile`
 //2) including script src 'public/bundle' in index.html package
 //3) serving INDEX page in server.js by running `node server.js`, and all js files with 'server.use(/public)' in server.js
-//FINAL note 1: need to run `npm run compile` each time a .js file gets updated!
-//FINAL note 2: then restart server, with `node server.js`
+//4) need to run `npm run compile` each time a .js file gets updated!
+//5) then restart Express server, with `node server.js`
 
 //new note:
 //the directions for y-websockets-server, via here: https://github.com/y-js/y-websockets-server#global-installation-easy
 //say: "Execute binary y-websockets-server [--port port] [--db db] (defaults: port = 1234, db = memory (choose either leveldb or memory))."
-//i didn't know what the fuck that meant.
-//after some researched, realized the way to run that binary is:
+//i didn't know what that meant. after some research, realized one way to run that binary is:
 //run `npx y-websockets-server` in Terminal
 
-//so NOW, to run this app, run:
+//so to run this app locally, run:
 //1) `node server.js`, and, in another Terminal tab:
 //2) `npm y-websockets-server`
-//to do ---->>> (try to make it so only need to run one command, so first command also runs second command...)
+
+//update:
+//1) locally installed y-websockets-server, in my-y-websockets-server, and added it to Heroku, following these directions: https://github.com/y-js/y-websockets-server#setup-with-heroku
+//2) now to run app locally, simply run `node server.js`, or `npm start`, which runs `node server.js`
+//3) will now add this whole app to Heroku, so the 'frontend' will be online as well.
 
 const Y = require('yjs')
 
@@ -31,7 +34,9 @@ require('y-websockets-client')(Y) //i imagine i need to require this too...
 var io = Y['websockets-client'].io //need to get this.....
 
 
-var link = 'http://localhost:1234'
+// var link = 'http://localhost:1234'
+var link = 'https://my-y-websockets-server.herokuapp.com/'
+
 // create a connection
 var connection = io(link) //need to include LINK within io()...
 
@@ -53,4 +58,4 @@ Y({
   y.share.textarea.bind(document.getElementById('textfield'))
 })
 
-console.log('3. in yjs, Y is: ', Y)
+// console.log('3. in yjs, Y is: ', Y)
