@@ -14002,6 +14002,18 @@ console.log('3. hello from src/yjs...')
 //FINAL note 1: need to run `npm run compile` each time a .js file gets updated!
 //FINAL note 2: then restart server, with `node server.js`
 
+//new note:
+//the directions for y-websockets-server, via here: https://github.com/y-js/y-websockets-server#global-installation-easy
+//say: "Execute binary y-websockets-server [--port port] [--db db] (defaults: port = 1234, db = memory (choose either leveldb or memory))."
+//i didn't know what the fuck that meant.
+//after some researched, realized the way to run that binary is:
+//run `npx y-websockets-server` in Terminal
+
+//so NOW, to run this app, run:
+//1) `node server.js`, and, in another Terminal tab:
+//2) `npm y-websockets-server`
+//to do ---->>> (try to make it so only need to run one command, so first command also runs second command...)
+
 const Y = require('yjs')
 
 // Yjs plugins
