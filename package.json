@@ -4,8 +4,9 @@
   "description": "Express app for textarea with Yjs",
   "main": "server.js",
   "scripts": {
-    "start": "server.js",
-    "compile": "browserify public/script.js public/main.js src/yjs.js -o public/bundle.js"
+    "compile": "browserify public/script.js public/main.js src/yjs.js -o public/bundle.js",
+    "postinstall": "npm run compile",
+    "start": "node server.js"
   },
   "author": "",
   "license": "MIT",
@@ -24,5 +25,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
+  },
+  "engines": {
+    "node": "9.11.1"
   }
 }
