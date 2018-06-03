@@ -35,7 +35,7 @@ var io = Y['websockets-client'].io //need to get this.....
 
 
 // var link = 'http://localhost:1234'
-var link = 'https://my-y-websockets-server.herokuapp.com/'
+var link = 'https://textarea-yjs-websockets-server.herokuapp.com/'
 
 // create a connection
 var connection = io(link) //need to include LINK within io()...
