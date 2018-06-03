@@ -14000,13 +14000,12 @@ console.log('3. hello from src/yjs...')
 //2) including script src 'public/bundle' in index.html package
 //3) serving INDEX page in server.js by running `node server.js`, and all js files with 'server.use(/public)' in server.js
 //FINAL note 1: need to run `npm run compile` each time a .js file gets updated!
-//FINAL note 2: then restart server, with `node server.js`
+//FINAL note 2: then restart Express server, with `node server.js`
 
 //new note:
 //the directions for y-websockets-server, via here: https://github.com/y-js/y-websockets-server#global-installation-easy
 //say: "Execute binary y-websockets-server [--port port] [--db db] (defaults: port = 1234, db = memory (choose either leveldb or memory))."
-//i didn't know what the fuck that meant.
-//after some researched, realized the way to run that binary is:
+//i didn't know what that meant. after some research, realized the way to run that binary is:
 //run `npx y-websockets-server` in Terminal
 
 //so NOW, to run this app, run:
@@ -14026,7 +14025,9 @@ require('y-websockets-client')(Y) //i imagine i need to require this too...
 var io = Y['websockets-client'].io //need to get this.....
 
 
-var link = 'http://localhost:1234'
+// var link = 'http://localhost:1234'
+var link = 'https://my-y-websockets-server.herokuapp.com/'
+
 // create a connection
 var connection = io(link) //need to include LINK within io()...
 
@@ -14048,6 +14049,6 @@ Y({
   y.share.textarea.bind(document.getElementById('textfield'))
 })
 
-console.log('3. in yjs, Y is: ', Y)
+// console.log('3. in yjs, Y is: ', Y)
 
 },{"y-array":58,"y-memory":59,"y-text":61,"y-websockets-client":62,"yjs":69}]},{},[71,70,72]);
