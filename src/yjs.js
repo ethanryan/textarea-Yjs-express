@@ -21,6 +21,7 @@ console.log('3. hello from src/yjs...')
 //1) locally installed y-websockets-server, in my-y-websockets-server, and added it to Heroku, following these directions: https://github.com/y-js/y-websockets-server#setup-with-heroku
 //2) now to run app locally, simply run `node server.js`, or `npm start`, which runs `node server.js`
 //3) will now add this whole app to Heroku, so the 'frontend' will be online as well.
+//4) new update: added to scripts in package.json: "postinstall": "npm run compile", for hosting 'frontend' on Heroku
 
 const Y = require('yjs')
 

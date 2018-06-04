@@ -1,5 +1,5 @@
-console.log("1. FROGS AND TOADS within PUBLIC folder...")
+console.log("1. hello from public/script.js file...")
 
-var awesome = "awesome, from script.js in public folder... you got it!"
+// var awesome = "awesome, from script.js in public folder... you got it!"
 
-console.log('1. this is: ', awesome)
+// console.log('1. this is: ', awesome)

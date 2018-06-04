@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Express app for textarea with Yjs",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethanryan/textarea-Yjs-express"
+  },
   "scripts": {
     "compile": "browserify public/script.js public/main.js src/yjs.js -o public/bundle.js",
     "postinstall": "npm run compile",
